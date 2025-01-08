@@ -1,0 +1,162 @@
+/* NAV */
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    padding: 20px 100px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 10rem;
+}
+
+.ul > h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+.links > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+}
+
+form > input {
+    padding: 15px 25px;
+    width: 200px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(255, 255, 255, 0.368);
+}
+
+form > input:focus {
+    outline: none;
+    color: white;
+}
+
+form > button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* responsi movil_menu */
+
+.movil {
+    display: none;
+    position: relative;
+}
+
+.menu_desplegable {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 200px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+    gap: 30px;
+}
+
+.menu_desplegable > div, a {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+}
+
+.none {
+    display: none;
+}
+
+.menu_desplegable > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.line {
+    width: 100%;
+    background: blue;
+}
+
+.menu_desplegable > button {
+    height: 5vh;
+    font-weight: bold;
+    background: rgb(250, 227, 227);
+    border: 1px solid rosybrown;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px){
+    header{
+        padding: 10px 20px;
+    }
+    .movil {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+    form {
+        display: none;
+    }
+    .main_img {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    header{
+        padding: 20px 50px;
+    }
+    .movil{
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+    .line, .menu_desplegable > button {
+        display: none;
+    }
+}
