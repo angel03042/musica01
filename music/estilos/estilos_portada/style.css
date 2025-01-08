@@ -1,0 +1,17 @@
+@import url(/estilos/estilos_portada/fondo.css);
+@import url(/estilos/estilos_portada/main.css);
+@import url(/estilos/estilos_portada/nav.css);
+@import url(/estilos/estilos_contenido/section_music.css);
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
